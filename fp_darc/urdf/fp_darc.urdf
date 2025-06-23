@@ -83,27 +83,27 @@
     </link>
     
     <joint name="base_footprint_base_link_joint" type="fixed">
-        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 3.14159265359"/>
         <parent link="base_footprint"/>
         <child link="base_link"/>
     </joint>
 
     <joint name="base_link_right_wheel_joint" type="continuous">
-        <origin xyz="0.1308 -0.196 0.0325" rpy="1.5707963267948966 -0.0 0.0" />
+        <origin xyz="0.1308 -0.196 0.0325" rpy="1.5707963267948966 -0.0 3.14159265359" />
         <parent link="base_link" />
         <child link="right_wheel_link" />
         <axis xyz="0.0 0.0 1.0" />
     </joint>
 
     <joint name="base_link_left_wheel_joint" type="continuous">
-        <origin xyz="0.1308 0.196 0.0325" rpy="-1.5707963267948966 -0.0 0.0" />
+        <origin xyz="0.1308 0.196 0.0325" rpy="-1.5707963267948966 -0.0 3.14159265359" />
         <parent link="base_link" />
         <child link="left_wheel_link" />
         <axis xyz="0.0 0.0 1.0" />
     </joint>
 
     <joint name="base_link_lidar_joint" type="fixed">
-        <origin xyz="0.17920000000000003 0.0 0.23870000000000002" rpy="0.0 -0.0 0.0" />
+        <origin xyz="0.17920000000000003 0.0 0.23870000000000002" rpy="0.0 -0.0 3.14159265359" />
         <parent link="base_link" />
         <child link="lidar_link" />
     </joint>
