@@ -1,0 +1,16 @@
+ros__parameters:
+  type: diff_drive_controller/DiffDriveController
+  left_wheel_names: ["base_link_left_wheel_joint"]
+  right_wheel_names: ["base_link_right_wheel_joint"]
+  wheel_separation: 0.362
+  wheel_radius: 0.0325
+
+  publish_rate: 50.0
+  cmd_vel_timeout: 0.5
+  use_stamped_vel: false
+  base_frame_id: base_link
+
+  linear.x.has_velocity_limits: true
+  linear.x.max_velocity: 1.0
+  angular.z.has_velocity_limits: true
+  angular.z.max_velocity: 2.0
