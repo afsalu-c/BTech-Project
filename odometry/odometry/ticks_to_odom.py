@@ -65,6 +65,10 @@ class OdometryPublisher(Node):
         # Compute robot velocity
         linear_velocity = (left_velocity + right_velocity) / 2.0
         angular_velocity = (right_velocity - left_velocity) / self.base_width
+
+        # #below added to correct the flipped odometry
+        # linear_velocity = -linear_velocity
+        # angular_velocity = -angular_velocity
         
         # Update robot position
         delta_x = linear_velocity * math.cos(self.theta) * time_interval
@@ -99,7 +103,7 @@ class OdometryPublisher(Node):
         transform.transform.rotation.w = math.cos(self.theta / 2.0)
         self.tf_broadcaster.sendTransform(transform)
         
-        self.get_logger().info(f'Odom: x={self.x:.3f}, y={self.y:.3f}, theta={self.theta:.3f}')
+        #self.get_logger().info(f'Odom: x={self.x:.3f}, y={self.y:.3f}, theta={self.theta:.3f}')
 
 
 def main(args=None):
