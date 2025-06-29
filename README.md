@@ -23,17 +23,17 @@ This project aims to enhance the cleaning efficiency of robot by handling the li
 
 ##  Ongoing work
 ![alt text](<Reslts/Drawing and 3D design.png>)
-*Figure 2: a). Diamensions & Drawing, b). 3D Design .*
+*Figure 2: a). Diamensions & Drawing, b). 3D Design.*
 
 
 
 ![alt text](<Reslts/Frame Design and URDF.png>)
-*Figure 3: a) Frame Design, b)Unified Robot Description Format (URDF) in RViz .*
+*Figure 3: a). Frame Design, b). Unified Robot Description Format (URDF) in RViz.*
 
 
 
 ![alt text](<Reslts/Laser Scan & Mapping.png>)
-*Figure 4: Laser scan & Mapping .*
+*Figure 4: Laser scan & Mapping.*
 
 
 ## Technologies Used
