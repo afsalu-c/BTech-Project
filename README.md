@@ -19,15 +19,18 @@ This project aims to enhance the cleaning efficiency of robot by handling the li
 5. SHAP Analysis for Feature Importance
 
 ![alt text](<Reslts/Phase 1, Project Works.png>)
-
 *Figure 1: Phase 1, Project Works.*
 
 ##  Ongoing work
 ![alt text](<Reslts/Drawing and 3D design.png>)
-*Figure 2: a). Diamensions & Drawing , b). 3D Design .*
+*Figure 2: a). Diamensions & Drawing, b). 3D Design .*
 
-![alt text](Reslts/URDF.png)
-*Figure 3: Unified Robot Description Format (URDF) in RViz .*
+
+
+![alt text](<Reslts/Frame Design and URDF.png>)
+*Figure 3: a) Frame Design, b)Unified Robot Description Format (URDF) in RViz .*
+
+
 
 ![alt text](<Reslts/Laser Scan & Mapping.png>)
 *Figure 4: Laser scan & Mapping .*
