@@ -15,6 +15,7 @@ setup(
         "console_scripts": [
             "odom_subscriber = odometry.odom_subscriber:main",
             "ticks_to_odom = odometry.ticks_to_odom:main",
+            "new_odom = odometry.new_odom:main"
         ],
     },
 )

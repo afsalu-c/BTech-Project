@@ -18,17 +18,15 @@ find_package(hardware_interface REQUIRED)
 find_package(pluginlib REQUIRED)
 find_package(ros2_control REQUIRED)
 find_package(ros2_controllers REQUIRED)
-#find_package(xacro REQUIRED)
-#find_package(launch REQUIRED)
-#find_package(launch_ros REQUIRED)
-#here is the end
+find_package(xacro REQUIRED)
 
 install(DIRECTORY
   launch
   urdf
   meshes
   config
-  DESTINATION share/${PROJECT_NAME}
+  rviz
+  DESTINATION share/${PROJECT_NAME}/
 )
 
 ament_package()
