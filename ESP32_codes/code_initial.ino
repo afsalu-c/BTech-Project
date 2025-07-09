@@ -16,7 +16,7 @@
 #define RIGHT_ENCODER_A_PIN 48 //   BLUE
 #define RIGHT_ENCODER_B_PIN 45  //     VIOLET
 #define INTERVAL 100  // Time interval in milliseconds
-#define PULSES_PER_REVOLUTION 560  // PPR
+//#define PULSES_PER_REVOLUTION 560  // PPR
 
 
 #define ENA 14
@@ -54,15 +54,19 @@ geometry_msgs__msg__Twist cmd_vel_msg;
 
 
 void IRAM_ATTR leftEncoderISR() {
-  left_ticks++;
+  if (digitalRead(LEFT_ENCODER_B_PIN) == HIGH)
+    left_ticks++;
+  else
+    left_ticks--;
 }
-
-
-
 
 void IRAM_ATTR rightEncoderISR() {
-  right_ticks++;
+  if (digitalRead(RIGHT_ENCODER_B_PIN) == LOW)
+    right_ticks++;
+  else
+    right_ticks--;
 }
+
 
 
 
