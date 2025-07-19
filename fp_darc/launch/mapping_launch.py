@@ -16,6 +16,7 @@ def generate_launch_description():
 
 
     slam_yaml = os.path.join(pkg_fp_darc, 'config', 'slam_params.yaml')
+    #slam_yaml = os.path.join(pkg_fp_darc, 'config', 'mapper_params_online_async.yaml')
     rplidar_launch = os.path.join(pkg_rplidar_ros, 'launch', 'rplidar_c1_launch.py')
     slam_launch = os.path.join(pkg_slam_toolbox,'launch', 'online_async_launch.py')
     view_robot = os.path.join(pkg_fp_darc, 'launch', 'view_robot.launch.py')
@@ -93,9 +94,10 @@ def generate_launch_description():
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(slam_launch),
             launch_arguments={
-                'params_file' : slam_yaml
+                'params_file': slam_yaml #,
+                #'use_sim_time': 'false'  # use a string, not Python's False
             }.items()
-        ),
+        )
 
         # Node(
         #     package='rviz2',

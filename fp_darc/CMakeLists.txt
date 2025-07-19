@@ -26,6 +26,7 @@ install(DIRECTORY
   meshes
   config
   rviz
+  maps
   DESTINATION share/${PROJECT_NAME}/
 )
 
