@@ -33,6 +33,8 @@ This project aims to enhance the cleaning efficiency of robot by handling the li
 ![alt text](Results/Map_of_DARC.png)
 *Figure 4: Mapping.*
 
+![alt text](Results/Navigaion.png)
+*Figure 5: Navigation.*
 
 ## Technologies Used
 
@@ -41,6 +43,7 @@ This project aims to enhance the cleaning efficiency of robot by handling the li
 * YOLOv8
 * LiDAR
 * SLAM Toolbox
+* Nav2
 
 
 ## Future Scope

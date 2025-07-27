@@ -5,7 +5,7 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
     pkg_fp_darc = get_package_share_directory('fp_darc')
-    map_file = os.path.join(pkg_fp_darc, 'maps', 'darc_room.yaml')
+    map_file = os.path.join(pkg_fp_darc, 'maps', 'elextron.yaml')
     nav2_params = os.path.join(pkg_fp_darc, 'config', 'nav2_params.yaml')
 
     return LaunchDescription([
@@ -66,11 +66,18 @@ def generate_launch_description():
             parameters=[nav2_params]
         ),
 
-        # RViz
         Node(
-            package='rviz2',
-            executable='rviz2',
-            name='rviz2',
-            output='screen'
-        )
+        package='nav2_smoother',
+        executable='smoother_server',
+        name='smoother_server',
+        parameters=[nav2_params],
+        output='screen'),
+
+        # RViz
+        # Node(
+        #     package='rviz2',
+        #     executable='rviz2',
+        #     name='rviz2',
+        #     output='screen'
+        # )
     ])
