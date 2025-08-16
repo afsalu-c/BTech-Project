@@ -12,7 +12,9 @@ This project aims to enhance the cleaning efficiency of robot by handling the li
 
 ##  Ongoing work
 
+### Watch the mapping video
 [![Watch the mapping video](Results/Mapping_video_frame.png)](https://www.linkedin.com/posts/afsalu-rahman-c_project-teamwork-mapping-activity-7359359713840386052-hgUO/) 
+*Video 1: Mapping of a room using SLAM toolbox.*
 
 
 ![alt text](<Results/Drawing and 3D design.png>)
