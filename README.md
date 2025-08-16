@@ -10,6 +10,26 @@ This project aims to enhance the cleaning efficiency of robot by handling the li
 * Currently enhancing the robot’s mapping and navigation capabilities using the SLAM Toolbox, the ROS 2 Navigation framework, and sensor fusion.
 
 
+##  Ongoing work
+
+[![Watch the mapping video](Results/Mapping_video_frame.png)](https://www.linkedin.com/posts/afsalu-rahman-c_project-teamwork-mapping-activity-7359359713840386052-hgUO/) 
+
+
+![alt text](<Results/Drawing and 3D design.png>)
+*Figure 1: a). Diamensions & Drawing, b). 3D Design.*
+
+
+![alt text](<Results/Frame Design and URDF.png>)
+*Figure 2: a). Frame Design, b). Unified Robot Description Format (URDF) in RViz.*
+
+
+![alt text](Results/Map_of_DARC.png)
+*Figure 3: Mapping.*
+
+![alt text](Results/Navigaion.png)
+*Figure 4: Navigation.*
+
+
 ## Phase 1 Results
 
 1. Data Preprocessing and Standardization
@@ -19,22 +39,7 @@ This project aims to enhance the cleaning efficiency of robot by handling the li
 5. SHAP Analysis for Feature Importance
 
 ![alt text](<Results/Phase 1, Project Works.png>)
-*Figure 1: Phase 1, Project Works.*
-
-##  Ongoing work
-![alt text](<Results/Drawing and 3D design.png>)
-*Figure 2: a). Diamensions & Drawing, b). 3D Design.*
-
-
-![alt text](<Results/Frame Design and URDF.png>)
-*Figure 3: a). Frame Design, b). Unified Robot Description Format (URDF) in RViz.*
-
-
-![alt text](Results/Map_of_DARC.png)
-*Figure 4: Mapping.*
-
-![alt text](Results/Navigaion.png)
-*Figure 5: Navigation.*
+*Figure 5: Phase 1, Project Works.*
 
 ## Technologies Used
 
